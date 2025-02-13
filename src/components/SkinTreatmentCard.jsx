@@ -161,7 +161,7 @@ const SkinTreatmentCard
       </div>
 
       {/* Add custom styles for scroll animation */}
-      <style jsx>{`
+      <style>{`
         @keyframes scroll {
           0% { transform: translateY(0); opacity: 1; }
           75% { transform: translateY(0.75rem); opacity: 0; }

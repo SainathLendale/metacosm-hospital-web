@@ -9,14 +9,12 @@ import {Link} from  'react-router-dom'
 
 const DualScrollGallery = () => {
   const images = [
-    { id: 1, title: 'Image 1', src: '/src/img/Metacosm hospital operation .webp' },
-    { id: 2, title: 'Image 2', src: 'src/img/Metacosm hospital opening.webp' },
-    { id: 3, title: 'Image 3', src: 'src/img/Metacosm hospital operating room.webp' },
-    { id: 4, title: 'Image 4', src: 'src/img/Metacosm hospital waiting room.webp' },
-    // { id: 5, title: 'Image 5', src: 'src/img/Metacosm hospital operation .jpg' },
-    // { id: 6, title: 'Image 6', src: '/api/placeholder/800/600' },
+    { id: 1, title: 'Image 1', src: '/img/Metacosm-hospital-operation.webp' },
+    { id: 2, title: 'Image 2', src: '/img/Metacosm-hospital-opening.webp' },
+    { id: 3, title: 'Image 3', src: '/img/Metacosm-hospital-operating-room.webp' },
+    { id: 4, title: 'Image 4', src: '/img/Metacosm-hospital-waiting-room.webp' },
   ];
-
+  
   const [selectedImage, setSelectedImage] = useState(null);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   
@@ -77,9 +75,9 @@ const DualScrollGallery = () => {
             ref={upperRowRef}
             className={`flex overflow-x-auto no-scrollbar ${isAutoScrolling ? 'animate-scroll-left' : ''}`}
           >
-            {scrollImages.map((image) => (
+            {scrollImages.map((image,i) => (
               <div
-                key={`upper-${image.id}`}
+                key={`upper-${image.id}-${i}`}
                 className="flex-none w-72 p-2"
                 onClick={() => setSelectedImage(image)}
               >
@@ -121,7 +119,7 @@ const DualScrollGallery = () => {
           >
             {scrollImages.map((image,i) => (
               <div
-                key={`lower-${i}`}
+                key={`lower-${image.id}-${i}`}
                 className="flex-none w-72 p-2"
                 onClick={() => setSelectedImage(image)}
               >
@@ -187,7 +185,7 @@ const DualScrollGallery = () => {
 )}
 
 
-      <style jsx global>{`
+      <style>{`
         .no-scrollbar::-webkit-scrollbar {
           display: none;
         }
