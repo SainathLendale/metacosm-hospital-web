@@ -119,9 +119,9 @@ const DualScrollGallery = () => {
             ref={lowerRowRef}
             className={`flex overflow-x-auto no-scrollbar ${isAutoScrolling ? 'animate-scroll-right' : ''}`}
           >
-            {scrollImages.map((image) => (
+            {scrollImages.map((image,i) => (
               <div
-                key={`lower-${image.id}`}
+                key={`lower-${i}`}
                 className="flex-none w-72 p-2"
                 onClick={() => setSelectedImage(image)}
               >

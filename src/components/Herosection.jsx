@@ -85,7 +85,7 @@ function Herosection() {
           </div>
           </div>
           {/* Image Slider */}
-          <div className="relative w-full h-40 md:h-80 mt-5 overflow-hidden rounded-lg shadow-lg">
+          <div className="relative w-full h-40 md:h-80 mt-5 overflow-hidden rounded-lg shadow-lg   ">
             {images.map((img, index) => (
               <img
                 key={index}

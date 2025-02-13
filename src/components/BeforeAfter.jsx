@@ -238,42 +238,23 @@ import { ArrowLeft, ArrowRight, Phone } from 'lucide-react';
 
 const BeforeAfter = () => {
   const cardsData = [
-    {
-      id: 1,
-      heading: "Ear Lobe Repair",
-      bgColor: "from-blue-100 to-indigo-50",
-      images: [
-        { 
-          src: "/src/img/metacosm berfor hair transplant image.webp", 
-          alt: "Ear Lobe Before",
-          beforeCaption: "Before Treatment",
-          afterCaption: "After Treatment"
-        },
-        { 
-          src: "/src/img/metacosm after result image.webp", 
-          alt: "Ear Lobe After",
-          beforeCaption: "Before Treatment",
-          afterCaption: "After Treatment"
-        }
-      ],
-      
-    },
+  
     {
       id: 2,
       heading: "Face Lift",
       bgColor: "from-green-100 to-yellow-50",
       images: [
         { 
-          src: "/api/placeholder/400/400", 
+          src: "/src/img/metacosm before result image.webp", 
           alt: "Face Lift Before",
           beforeCaption: "Before Treatment",
-          afterCaption: "After Treatment"
+         
         },
         { 
-          src: "/api/placeholder/400/400", 
+          src: "/src/img/metacosm after hair transplant image.webp", 
           alt: "Face Lift After",
           beforeCaption: "Before Treatment",
-          afterCaption: "After Treatment"
+         
         }
       ],
     

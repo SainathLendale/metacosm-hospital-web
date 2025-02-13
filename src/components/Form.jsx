@@ -26,6 +26,13 @@ const Form = () => {
     <div className="min-h-screen bg-gray-50 mt-10">
       {/* Enquiry Form Section */}
       <section className="py-16 px-4">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-2">
+          Appointment form
+        </h1>
+        <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+      </div>
+
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2">
             {/* Contact Information */}
