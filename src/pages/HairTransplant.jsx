@@ -120,19 +120,19 @@ const TreatmentCard = ({ image, title, description, path, delay = 0 }) => {
 const HairTransplant = () => {
   const treatments = [
     {
-      image: "/src/img/fue img.webp",
+      image: "/fue img.webp",
       path: "/hairTransplant",
       title: "FUE Hair Transplant",
       description: "Hair transplantation is a surgical process in which hair is removed from the donor location and transplanted to the recipient/receiver site. The method is mostly used to address male hair loss, such as thinning hair .."
     },
     {
-      image: "/src/img/front hairline.webp",
+      image: "/front hairline.webp",
       path: "/hairTreatment",
       title: "Front Hairline Transplat",
       description: " Front hairline transplant, also known as hairline lowering surgery or forehead reduction surgery, is a specialized hair transplant procedure designed to reshape and lower the frontal hairline to create a more balanced."
     },
     {
-      image: "/src/img/hairline advancedment.webp",
+      image: "/hairline advancedment.webp",
       path: "/skinCare",
       title: "Hairline advancement", 
       description: "Hairline advancement, also known as forehead reduction surgery or hairline lowering surgery, is a specialized cosmetic procedure designed to reduce the size of the forehead and lower the hairline to create a more proportional."
@@ -150,7 +150,7 @@ const HairTransplant = () => {
         
         <div className="relative max-w-4xl mx-auto mb-12">
           <img 
-            src="/src/img/metacosm hair treatment page header img.webp" 
+            src="/metacosm hair treatment page header img.webp" 
             alt="Hair Treatment"
             className="w-full h-auto rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500"
           />

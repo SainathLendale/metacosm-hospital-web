@@ -121,13 +121,13 @@ const TreatmentCard = ({ image, title, description, path, delay = 0 }) => {
 const HairTreatmentPage = () => {
   const treatments = [
     {
-      image: "/src/img/hair loos male.webp",
+      image: "./hair loos male.webp",
       path: "/hairTransplant",
       title: "Hair loss treatment in men ",
        description: "Hair loss in men, particularly male pattern baldness, is a prevalent concern affecting millions worldwide.Male pattern baldness typically receding hairline"
     },
     {
-      image: "src/img/hair loss female.webp",
+      image: "./hair loss female.webp",
       path: "/hairTreatment",
       title: "Hair loss treatment in women",
       description: "Hair loss in women can be a distressing and emotionally challenging experience, often impacting self-esteem and quality of life"
@@ -139,25 +139,25 @@ const HairTreatmentPage = () => {
     //   description: "Cosmetic care enhances beauty and boosts confidence with personalized treatments and professional techniques. From rejuvenating facials to laser therapies, skin care services provide long-lasting solutions for healthy and youthful skin."
     // },
     {
-      image: "/src/img/hair thining.webp",
+      image: "./hair thining.webp",
       path: "/skinCare",
       title: "Hair thinning",
       description: "Hair thinning and baldness are becoming increasingly common among women. As a result of the negative impacts of scalp difficulties, thinning hair."
     },
     {
-      image: "/src/img/gray hair.webp",
+      image: "./gray hair.webp",
       path: "/skinCare",
       title: "Grey hair",
       description: "Grey hair, also known as achromotrichia, is a natural part of the aging process and occurs when melanocytes, the pigment-producing cells in hair follicles."
     },
     {
-      image: "/src/img/dandruff.webp",
+      image: "./dandruff.webp",
       path: "/skinCare",
       title: "Dandruff",
       description: "Dandruff is a scalp disorder in which tiny flakes of dry skin fall off. You can detect flakes in your hair or on your shoulders if you have dark hair or are wearing dark colours."
     },
     {
-      image: "/src/img/alopecia.webp",
+      image: "./alopecia.webp",
       path: "/skinCare",
       title: "Alopecia",
       description: "Alopecia is a broad term used to describe various types of hair loss that occur when the immune system mistakenly attacks hair follicles, leading to hair loss in patches."
@@ -169,7 +169,7 @@ const HairTreatmentPage = () => {
       description: "Hair damage encompasses a range of issues affecting the health and integrity of the hair shaft, resulting in dryness, breakage, split ends, and overall lackluster appearance."
     },
     {
-      image: "/src/img/metacosm Hairline advancement.webp",
+      image: "./metacosm Hairline advancement.webp",
       path: "/skinCare",
       title: "PRP | Stem Cells Therpay",
       description: "PRP therapy involves extracting a sample of the patient’s blood and processing it to isolate the platelet-rich plasma, which contains a concentrated source of growth."
@@ -187,7 +187,7 @@ const HairTreatmentPage = () => {
         
         <div className="relative max-w-4xl mx-auto mb-12">
           <img 
-            src="/src/img/metacosm hair treatment page header img.webp" 
+            src="./metacosm hair treatment page header img.webp" 
             alt="Hair Treatment"
             className="w-full h-auto rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500"
           />

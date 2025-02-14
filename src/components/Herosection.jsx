@@ -6,8 +6,8 @@
 
 
 import React, { useState, useEffect, useRef } from "react";
-import img1 from "/src/img/Metacosm hospital operation .webp";
-import img2 from "/src/img/metacosm Hairline advancement.webp";
+import img1 from "../../public/img/Metacosm hospital operation .webp";
+import img2 from "../../public/img/metacosm Hairline advancement.webp";
 
 
 import { Link } from "react-router-dom";

@@ -3,7 +3,7 @@
 import React, { useState, useEffect, lazy } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
-import logoimg  from '../img/metacosmhospitallogo.png'
+import logoimg  from '../../public/img/metacosmhospitallogo.png'
 
 
 const Navbar = () => {

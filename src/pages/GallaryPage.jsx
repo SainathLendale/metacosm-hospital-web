@@ -7,11 +7,11 @@ const Gallary = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   
   const images = [
-    { id: 1, url: "src/img/Metacosm hospital waiting room.webp", title: "Nature 1" },
-    { id: 2, url: "src/img/Metacosm hospital opening.webp", title: "Nature 2" },
-    { id: 3, url: "/src/img/Metacosm hospital operation .webp", title: "Nature 3" },
-    { id: 4, url: "/src/img/Metacosm hospital Reception.webp", title: "Nature 4" },
-    { id: 5, url: "src/img/Metacosm hospital operating room.webp", title: "Nature 5" },
+    { id: 1, url: "./Metacosm hospital waiting room.webp", title: "Nature 1" },
+    { id: 2, url: "./Metacosm hospital opening.webp", title: "Nature 2" },
+    { id: 3, url: "./Metacosm hospital operation .webp", title: "Nature 3" },
+    { id: 4, url: "./Metacosm hospital Reception.webp", title: "Nature 4" },
+    { id: 5, url: "./Metacosm hospital operating room.webp", title: "Nature 5" },
     // { id: 5, url: "src/img/Metacosm hospital operating room.webp", title: "Nature 5" },
     { id: 6, url: "/src/img/Metacosm hospital treatment room.webp", title: "Nature 6" },
 
