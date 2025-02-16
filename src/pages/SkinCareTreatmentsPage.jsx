@@ -1,229 +1,5 @@
 
 
-
-
-
-// import React, { useState, useRef } from 'react';
-
-// const treatments = [
-//   {
-//     id: 1,
-//     name: "Ear Lobe Repair",
-//     description: "Ear lobe repair is a cosmetic procedure designed to address stretched, torn, or damaged earlobes caused by trauma, prolonged wearing of heavy earrings.",
-//     fullDescription: "Advanced hyaluronic acid technology to deeply moisturize and restore skin's natural barrier.",
-//     color: "from-blue-100 to-blue-300"
-//   },
-//   {
-//     id: 2,
-//     name: "Face Lift",
-//     description: "A facelift, also known as rhytidectomy, is a surgical procedure designed to address signs of aging in the face and neck by lifting and tightening sagging skin and tissues.",
-//     fullDescription: "Combines gentle exfoliation with deep-pore cleansing to remove dead skin cells and impurities.",
-//     color: "from-green-100 to-green-300"
-//   },
-//   {
-//     id: 3,
-//     name: "Lipoma removal",
-//     description: "A lipoma is a benign tumor composed of fat cells that typically develops just beneath the skin. While lipomas are usually harmless and painless, they sometimes grow large.",
-//     fullDescription: "Cutting-edge peptides and antioxidants to stimulate collagen production and reduce wrinkles.",
-//     color: "from-pink-100 to-pink-300"
-//   },
-//   {
-//     id: 4,
-//     name: "Vitiligo patches therapy",
-//     description: "Vitiligo is a chronic skin condition characterized by the loss of pigment-producing cells (melanocytes), resulting in depigmented patches or white spots on the skin.",
-//     fullDescription: "Advanced vitamin C and natural extracts to illuminate skin and reduce hyperpigmentation.",
-//     color: "from-yellow-100 to-yellow-300"
-//   },
-//   {
-//     id: 5,
-//     name: "Keloid scar removal",
-//     description: "Keloids are raised, overgrown scars that extend beyond the boundaries of the original wound and are characterized by their thick, fibrous texture and tendency to after treatment.",
-//     fullDescription: "Salicylic acid and tea tree oil treatment to fight bacteria and reduce inflammation.",
-//     color: "from-purple-100 to-purple-300"
-//   },
-//   {
-//     id: 6,
-//     name: "Nail surgery",
-//     description: "Nail surgery is a specialized procedure used to address a variety of nail disorders and conditions, including ingrown toenails, fungal infections, nail deformities, nail trauma.",
-//     fullDescription: "Soothing botanicals and minimal ingredients to reduce redness and irritation.",
-//     color: "from-teal-100 to-teal-300"
-//   },
-//   {
-//     id: 7,
-//     name: "Lip enhancement",
-//     description: "Lip enhancement, also known as lip augmentation or lip augmentation, is a cosmetic procedure designed to add volume, shape, and definition to the lips for a fuller, more appearance.",
-//     fullDescription: "Pure oxygen and nutrient-rich serums to instantly refresh and revive tired skin.",
-//     color: "from-indigo-100 to-indigo-300"
-//   },
-//   {
-//     id: 8,
-//     name: "Micropigmentation for eyebrows",
-//     description: "Micropigmentation for eyebrows, also known as eyebrow tattooing or permanent makeup, is a cosmetic procedure that involves depositing pigment .",
-//     fullDescription: "Microscopic channels to enhance product absorption and stimulate natural healing.",
-//     color: "from-rose-100 to-rose-300"
-//   },
-//   {
-//     id: 9,
-//     name: "Micropigmentation for lips",
-//     description: "Micropigmentation for lips, also known as permanent makeup or cosmetic tattooing, is a non-invasive cosmetic procedure that involves depositing pigment into the skin to enhance lip color, shape.",
-//     fullDescription: "Removes dead skin cells and promotes cellular turnover for a more even, refined complexion.",
-//     color: "from-cyan-100 to-cyan-300"
-//   }
- 
-// ];
-
-// const TreatmentCard = ({ treatment }) => {
-//   const [isExpanded, setIsExpanded] = useState(false);
-//   const cardRef = useRef(null);
-
-//   const handleMouseMove = (e) => {
-//     const card = cardRef.current;
-//     const rect = card.getBoundingClientRect();
-//     const x = e.clientX - rect.left;
-//     const y = e.clientY - rect.top;
-    
-//     const centerX = rect.width / 2;
-//     const centerY = rect.height / 2;
-    
-//     const rotateX = (y - centerY) / 10;
-//     const rotateY = -(x - centerX) / 10;
-    
-//     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
-//   };
-
-//   const handleMouseLeave = () => {
-//     const card = cardRef.current;
-//     card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-//   };
-
-//   return (
-//     <div 
-//       ref={cardRef}
-//       onMouseMove={handleMouseMove}
-//       onMouseLeave={handleMouseLeave}
-//       className={`
-//         relative overflow-hidden group
-//         rounded-2xl shadow-lg 
-//         w-[250px] h-[300px]
-//         p-4 
-//         bg-gradient-to-br ${treatment.color}
-//         bg-opacity-50 backdrop-blur-sm
-//         border border-white/30
-//         transition-transform duration-300
-//         will-change-transform
-//       `}
-//     >
-//       <div className="absolute inset-0 bg-white/30 backdrop-blur-sm rounded-2xl"></div>
-
-//       <div className="relative z-10 flex flex-col h-full">
-//         <h3 className="text-xl font-bold text-gray-800 mb-2">
-//           {treatment.name}
-//         </h3>
-//         <p className="text-gray-700 mb-3 text-sm flex-grow">
-//           {isExpanded ? treatment.fullDescription : treatment.description}
-//         </p>
-//         <button 
-//           onClick={() => setIsExpanded(!isExpanded)}
-//           className="text-gray-800 bg-white/50 px-3 py-1 rounded-full
-//           text-sm
-//           hover:bg-white/70 
-//           flex items-center self-start
-//           transition-all duration-300 
-//           hover:scale-105"
-//         >
-//           {isExpanded ? "Show Less" : "Read More"}
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// const SkinCareTreatmentsPage = () => {
-//   return (
-//     <div className="min-h-screen relative overflow-hidden
-//       bg-gradient-to-br from-blue-50 via-white to-blue-50 
-//       before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0
-//       before:bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))]
-//       before:from-blue-100/20 before:via-white/10 before:to-transparent
-//       before:-z-10
-//       after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0
-//       after:bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))]
-//       after:from-purple-100/20 after:via-white/10 after:to-transparent
-//       after:-z-10
-//       py-12 px-4  mt-10"
-//     >
-//       <div className="container mx-auto text-center">
-//         <h1 className="text-4xl font-bold mb-4 
-//           bg-gradient-to-r  from-purple-600 to-pink-600
-//           bg-clip-text text-transparent
-//           animate-gradient-x"
-//         >
-//           Discover Your Perfect Skin Care Journey
-//         </h1>
-        
-//         <div className="flex flex-wrap justify-center gap-6">
-//           {treatments.map((treatment) => (
-//             <TreatmentCard 
-//               key={treatment.id} 
-//               treatment={treatment} 
-//             />
-//           ))}
-//         </div>
-//       </div>
-//       <style jsx>{`
-//         @keyframes gradient-x {
-//           0%, 100% { background-position: 0% 50%; }
-//           50% { background-position: 100% 50%; }
-//         }
-//         .animate-gradient-x {
-//           background-size: 200% 200%;
-//           animation: gradient-x 5s ease infinite;
-//         }
-//       `}</style>
-//     </div>
-//   );
-// };
-
-// export default SkinCareTreatmentsPage;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 // import { Link } from 'react-router-dom';
@@ -338,37 +114,37 @@ const TreatmentCard = ({ image, title, description, path, delay = 0 }) => {
 const SkinCareTreatmentsPage = () => {
   const treatments = [
     {
-      image: "/src/img/Anti Ageing Treatment .webp",
+      image: "/img/Anti Ageing Treatment .webp",
       path: "/hairTransplant",
       title: "Anti Ageing Treatment ",
        description: "Anti-aging treatments encompass a range of techniques and procedures aimed at reducing the visible signs of aging, such as wrinkles."
     },
     {
-      image: "/src/img/metacosm acne img.webp",
+      image: "/img/metacosm acne img.webp",
       path: "/hairTreatment",
       title: "Acne treatment",
       description: "Acne treatment encompasses a range of therapies aimed at managing and reducing acne breakouts, inflammation, and scarring."
     },
     {
-      image: "/src/img/metacosm under eye reatmens.webp",
+      image: "/img/metacosm under eye reatmens.webp",
       path: "/skinCare",
       title: "Under-eye treatments",
       description: "Under-eye treatments focus on addressing concerns such as dark circles, puffiness, fine lines, and wrinkles in the delicate skin around the eyes."
     },
     {
-      image: "/src/img/Facial rejuvenation.webp",
+      image: "/img/Facial rejuvenation.webp",
       path: "/skinCare",
       title: "Facial rejuvenation",
       description: "Facial rejuvenation encompasses various treatments and procedures aimed at revitalizing the appearance of the face, reducing signs of aging."
     },
     {
-      image: "/src/img/mole removal.webp",
+      image: "/img/mole removal.webp",
       path: "/skinCare",
       title: "Mole removal",
       description: "Moles are little skin cells that can form on any part of the body over time. They come in a variety of sizes, shapes, and shades."
     },
     {
-      image: "/src/img/metacosm complexion improvement.webp",
+      image: "/img/metacosm complexion improvement.webp",
       path: "/skinCare",
       title: "Complexion improvement",
       description: "Complexion improvement treatments are aimed at enhancing the overall appearance and health of the skin, resulting in a smoother."
@@ -380,25 +156,25 @@ const SkinCareTreatmentsPage = () => {
     //   description: "Skin and body polishing treatments are exfoliating procedures designed to remove dead skin cells, unclog pores, and improve skin texture "
     // },
     {
-      image: "/src/img/facisl hyperpigmentation.webp",
+      image: "/img/facisl hyperpigmentation.webp",
       path: "/skinCare",
       title: "Facial hyperpigmentation therapy",
       description: "Facial hyperpigmentation therapy is a specialized treatment aimed at reducing the appearance of hyperpigmentation."
     },
     {
-      image: "/src/img/suntan removal metacosm.webp",
+      image: "/img/suntan removal metacosm.webp",
       path: "/skinCare",
       title: "Suntan removal",
       description: "Suntan removal treatments are designed to lighten and fade unwanted tan lines or dark patches on the skin caused by sun exposure Suntans the skin."
     },
     {
-      image: "/api/placeholder/400/400",
+      image: "/img/LOW-LAZER-LIGHT-THERAPY metacosm.webp",
       path: "/skinCare",
       title: "Low-level laser therapy",
       description: "Low-level laser therapy (LLLT), also known as cold laser therapy or photobiomodulation, is a non-invasive treatment that uses low-level laser light."
     },
     {
-      image: "/src/img/tatto removal treatment.webp",
+      image: "/img/tatto removal treatment.webp",
       path: "/skinCare",
       title: "Tattoo removal",
       description: "Tattoo removal is a cosmetic procedure aimed at permanently removing unwanted tattoos from the skin. Tattoos are created by injecting ink skin."
@@ -416,7 +192,7 @@ const SkinCareTreatmentsPage = () => {
         
         <div className="relative max-w-4xl mx-auto mb-12">
           <img 
-            src="/src/img/metacosm hospital about .webp" 
+            src="/img/metacosm hospital about .webp" 
             alt="Hair Treatment"
             className="w-full h-auto rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500"
           />

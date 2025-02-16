@@ -5,14 +5,16 @@ import React, { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight, X, Maximize } from 'lucide-react';
 import { Check, ExternalLink } from 'lucide-react';
 import {Link} from  'react-router-dom'
+ 
+
 
 
 const DualScrollGallery = () => {
   const images = [
-    { id: 1, title: 'Image 1', src: '/img/Metacosm-hospital-operation.webp' },
-    { id: 2, title: 'Image 2', src: '/img/Metacosm-hospital-opening.webp' },
-    { id: 3, title: 'Image 3', src: '/img/Metacosm-hospital-operating-room.webp' },
-    { id: 4, title: 'Image 4', src: '/img/Metacosm-hospital-waiting-room.webp' },
+    // { id: 1, title: 'Image 1', src: '/img/fue img.webp' }, 
+    { id: 2, title: 'Image 2', src: '/img/Metacosm hospital opening.webp' },
+    { id: 3, title: 'Image 3', src: '/img/Metacosm hospital Reception counter.webp' },
+    { id: 4, title: 'Image 4', src: '/img/Metacosm hospital waiting room.webp' },
   ];
   
   const [selectedImage, setSelectedImage] = useState(null);

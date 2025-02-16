@@ -97,20 +97,20 @@ const SkinTreatmentCard
  = () => {
   const treatments = [
     {
-      image: "/src/img/metacosm hair transpalnt img.webp",
+      image: "/img/metacosm hair transpalnt img.webp",
       // url : "",
       path:"/hairTransplant",
       title: "Hair Transplant",
       description: "After a hair transplant session, the transplanted hairs begin to take on a natural appearance."
     },
     {
-      image: "/src/img/metacosm hair treatment img .jpg",
+      image: "/img/metacosm hair treatment img .jpg",
       path:"/hairTreatment",
       title: "Hair Treatment",
       description: "Hair treatment services encompass a variety of procedures and products designed to improve the health, appearance, and manageability of hair."
     },
     {
-      image: "/src/img/cosmatic care img .webp",
+      image: "/img/cosmatic care img .webp",
       path:"/skinCare",
       title: "Cosmatic care",
       description: "Cosmetic care enhances beauty and boosts confidence with personalized treatments and professional techniques."
