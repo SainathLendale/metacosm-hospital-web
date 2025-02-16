@@ -55,7 +55,7 @@ const AboutPage = () => {
         id="hero"
         className="relative h-screen flex items-center justify-center text-white bg-cover bg-center"
         style={{
-          backgroundImage: `url('./metacosm hair treatment page.webp')`,
+          backgroundImage: `url('/img/metacosm about page img.webp')`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>

@@ -6,7 +6,7 @@ import {BrowserRouter} from 'react-router'
 
 createRoot(document.getElementById('root')).render(
   
-  <BrowserRouter>
+  <BrowserRouter  basename={process.env.PUBLIC_URL}>
   
 
     <App />

@@ -57,6 +57,10 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          <a
+      href="https://wa.me/919096772419?text=Welcometo our metacosm hospital "
+      target="_blank"
+      rel="noopener noreferrer">
           <div
             className="p-6 bg-green-500 text-white rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
             data-scroll
@@ -65,15 +69,17 @@ const Contact = () => {
               <MessageCircle className="w-8 h-8" />
               <div>
                 <h4 className="text-lg font-bold">WhatsApp Us</h4>
-                <p>+91 9209735060</p>
+                <p>+91 9096772419</p>
               </div>
             </div>
           </div>
+          </a>
+          
         </div>
       </div>
 
       {/* Instagram Section */}
-      <div className="py-8 px-4">
+      {/* <div className="py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-2xl font-bold mb-4">Follow Us on Instagram</h3>
           <div className="grid grid-cols-3 gap-4">
@@ -87,7 +93,7 @@ const Contact = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

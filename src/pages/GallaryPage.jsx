@@ -7,22 +7,22 @@ const Gallary = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   
   const images = [
-    { id: 1, url: "./Metacosm hospital waiting room.webp", title: "Nature 1" },
-    { id: 2, url: "./Metacosm hospital opening.webp", title: "Nature 2" },
-    { id: 3, url: "./Metacosm hospital operation .webp", title: "Nature 3" },
-    { id: 4, url: "./Metacosm hospital Reception.webp", title: "Nature 4" },
-    { id: 5, url: "./Metacosm hospital operating room.webp", title: "Nature 5" },
+    { id: 1, url: "/img/Metacosm hospital waiting room.webp", title: "Nature 1" },
+    { id: 2, url: "/img/Metacosm hospital opening.webp", title: "Nature 2" },
+    { id: 3, url: "/img/Metacosm hospital operation .webp", title: "Nature 3" },
+    { id: 4, url: "/img/Metacosm hospital Reception.webp", title: "Nature 4" },
+    { id: 5, url: "/img/Metacosm hospital operating room.webp", title: "Nature 5" },
     // { id: 5, url: "src/img/Metacosm hospital operating room.webp", title: "Nature 5" },
-    { id: 6, url: "/src/img/Metacosm hospital treatment room.webp", title: "Nature 6" },
+    { id: 6, url: "./img/Metacosm hospital Reception counter.webp", title: "Nature 6" },
 
   
   ];
 
-  const videos = [
-    { id: 1, thumbnail: "/api/placeholder/400/300", title: "Video 1" },
-    { id: 2, thumbnail: "/api/placeholder/400/300", title: "Video 2" },
-    { id: 3, thumbnail: "/api/placeholder/400/300", title: "Video 3" }
-  ];
+  // const videos = [
+  //   { id: 1, thumbnail: "/api/placeholder/400/300", title: "Video 1" },
+  //   { id: 2, thumbnail: "/api/placeholder/400/300", title: "Video 2" },
+  //   { id: 3, thumbnail: "/api/placeholder/400/300", title: "Video 3" }
+  // ];
 
   React.useEffect(() => {
     setIsLoaded(true);
@@ -120,7 +120,7 @@ const Gallary = () => {
       </section>
 
       {/* Video Slider Section */}
-      <section>
+      {/* <section>
         <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 md:mb-8">Video Gallery</h2>
         <div className="relative">
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
@@ -152,7 +152,7 @@ const Gallary = () => {
             <ChevronRight className="w-6 h-6" />
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Fullscreen Overlay */}
       {selectedImage && (
@@ -175,6 +175,10 @@ const Gallary = () => {
           <h3 className="absolute bottom-8 text-white text-xl md:text-2xl font-semibold px-4 text-center">
             {selectedImage.title}
           </h3>
+
+
+
+
         </div>
       )}
 

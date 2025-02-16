@@ -68,7 +68,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white mb-4">Find Us</h3>
             <div className="bg-gray-800 w-full h-48 rounded-lg"> */}
               {/* Replace this div with an actual map component */}
-              {/* <div className="w-full h-full rounded-lg overflow-hidden">
+               {/* <div className="w-full h-full rounded-lg overflow-hidden">
                 <img 
                   src="/api/placeholder/400/320" 
                   alt="Location Map" 
@@ -76,8 +76,8 @@ const Footer = () => {
                 />
               </div>
             </div>
-          </div> */}
-        </div>
+          </div>*/}
+        </div> 
 
         {/* Social Media & Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-800">

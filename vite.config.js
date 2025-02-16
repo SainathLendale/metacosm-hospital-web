@@ -21,6 +21,13 @@ import { dirname } from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "./",  // Use relative paths for assets
+  build: {
+    outDir: "dist",
+  },
+  server: {
+    historyApiFallback: true, // Ensures routing works
+  },
   resolve: {
     alias: {
       'lucide-react': fileURLToPath(

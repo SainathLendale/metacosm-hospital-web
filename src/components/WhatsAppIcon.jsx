@@ -37,7 +37,7 @@ const WhatsAppIcon = () => {
 
   return (
     <a
-      href="https://wa.me/919096772419?text=Welcome to our metacosm hospital "
+      href="https://wa.me/919096772419?text=Welcometo our metacosm hospital "
       target="_blank"
       rel="noopener noreferrer"
       ref={iconRef}

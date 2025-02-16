@@ -47,7 +47,7 @@ function Herosection() {
   }, [images.length]);
 
   return (
-    <div className="min-h-screen  bg-gradient-to-br from-gray-50 to-gray-100  relative overflow-hidden">
+    <div className="min-h-screen mt-8 bg-gradient-to-br from-gray-50 to-gray-100  relative overflow-hidden">
       <div className="bg-gray-50 px-4 py-16 md:py-24 lg:px-12">
         <div className="max-w-4xl mx-auto">
 

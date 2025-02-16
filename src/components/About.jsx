@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
-import aboutImg from "../../public/img/metacosm hospital about .webp";
+import aboutImg from "/img/metacosm hospital about .webp";
 
 const About = () => {
   const [bgColor, setBgColor] = useState("bg-white");
